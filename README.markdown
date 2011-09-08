@@ -1,0 +1,1 @@
+A nested set representation of Inventory where Categories are non-terminal nodes and Products are leafs.  Using nested_set
