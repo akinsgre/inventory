@@ -1,0 +1,2 @@
+class Category < Item
+end

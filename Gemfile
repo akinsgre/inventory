@@ -14,11 +14,11 @@ end
 gem 'jquery-rails'
 
 group :development do
-  gem 'rspec-rails', '2.6.0'
+  gem 'rspec-rails', '2.6.1'
 end
 group :test do
   # Pretty printed test output
-  gem 'rspec-rails', '2.6.0'
+  gem 'rspec-rails', '2.6.1'
   
   gem 'turn', :require => false
 end

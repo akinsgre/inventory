@@ -1,0 +1,11 @@
+<html>
+<body>
+This really does suck
+<% if @categories.empty? %>
+No categories
+<% end %>
+<% @categories.each do |category| %>
+<%= category.name %>
+<% end %>
+</body>
+</html>

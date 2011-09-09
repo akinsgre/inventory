@@ -1,0 +1,2 @@
+class Product < Item
+end
