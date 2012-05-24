@@ -1,29 +1,43 @@
-<h1>Listing items</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Parent</th>
-    <th>Type</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @items.each do |item| %>
-  <tr>
-    <td><%= item.name %></td>
-    <td><%= item.description %></td>
-    <td><%= item.parent_id %></td>
-    <td><%= item.type %></td>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Edit', edit_item_path(item) %></td>
-    <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
+<meta charset="utf-8">
 <%= link_to 'New Item', new_item_path %>
+<div class="demo">
+
+  <div class="column">
+
+    <div class="portlet">
+      <div class="portlet-header">Feeds</div>
+      <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+    </div>
+    
+    <div class="portlet">
+      <div class="portlet-header">News</div>
+      <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+    </div>
+
+  </div>
+
+  <div class="column">
+
+    <div class="portlet">
+      <div class="portlet-header">Shopping</div>
+      <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+    </div>
+
+  </div>
+
+  <div class="column">
+
+    <div class="portlet">
+      <div class="portlet-header">Links</div>
+      <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+    </div>
+    
+    <div class="portlet">
+      <div class="portlet-header">Images</div>
+      <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+    </div>
+
+  </div>
+
+</div><!-- End demo -->
+
